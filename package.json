@@ -1,0 +1,20 @@
+{
+	"name": "webpack-cwa-builder",
+	"version": "1.0.0",
+	"description": "webpack builder",
+	"main": "index.js",
+	"repository": "https://github.com/Leneli/webpack-cwa-builder.git",
+	"author": "Elena Kuklina <e.kuklina@comradeweb.com>",
+	"license": "MIT",
+	"scripts": {},
+	"devDependencies": {
+		"@babel/cli": "^7.4.3",
+		"@babel/core": "^7.4.3",
+		"@babel/preset-env": "^7.4.3",
+		"webpack": "^4.29.6",
+		"webpack-cli": "^3.3.0"
+	},
+	"dependencies": {
+		"@babel/polyfill": "^7.4.3"
+	}
+}
