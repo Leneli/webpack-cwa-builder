@@ -6,7 +6,12 @@
 	"repository": "https://github.com/Leneli/webpack-cwa-builder.git",
 	"author": "Elena Kuklina <e.kuklina@comradeweb.com>",
 	"license": "MIT",
-	"scripts": {},
+	"scripts": {
+		"build": "webpack --mode production",
+		"serve": "webpack --mode development",
+		"lint": "",
+		"add-page": ""
+	},
 	"devDependencies": {
 		"@babel/cli": "^7.4.3",
 		"@babel/core": "^7.4.3",

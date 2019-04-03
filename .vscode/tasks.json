@@ -4,9 +4,39 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "echo",
+			"label": "development",
 			"type": "shell",
-			"command": "echo Hello"
-		}
+			"command": "yarn serve",
+			"problemMatcher": "$go",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		
+		{
+			"label": "production",
+			"type": "shell",
+			"command": "yarn build",
+			"problemMatcher": "$go"
+		},
+		
+		{
+			"label": "linter",
+			"type": "shell",
+			"command": "yarn lint",
+			"problemMatcher": "$go"
+		},
+		
+		{
+			"label": "page",
+			"type": "shell",
+			"command": "yarn",
+			"args": [
+				"add-page",
+				"${input:pageName}"
+			],
+			"problemMatcher": "$go"
+		},
 	]
 }
